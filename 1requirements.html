@@ -31,335 +31,341 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-              data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li  class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projectBackground">Requirements</a>
-          </li >
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="2research.html">Research</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li  class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projectBackground">Requirements</a>
+        </li >
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="2research.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="3algorithms.html">Algorithms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="4hci.html">HCI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="5prototype.html">Prototype</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="6achievement.html">Achievement</A>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="7plan.html">Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="8appendices.html">Appendices</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Requirements</h1>
+      <!--<h2 class="text-white-50 mx-auto mt-2 mb-5">A list of requirements.</h2>-->
+    </div>
+  </div>
+</header>
+
+<!-- Project background Section -->
+<section id="projectBackground" class="projectBackground-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <p></p>
+        <h2 class="text-black mb-4">Project background</h2>
+        <p class="text-black-50">A previous IXN MSc project created a chatbot with the aim of improving how GPs can
+          access educational material. It was presented to the leading GPs at the RCGP and sparked
+          lots of interest! We’d like to continue to develop and build out this chatbot focusing on a
+          larger and more complex educational resource.</p>
+        <!--          TODO: confirm project backgrouns is correct?-->
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
+</section>
+
+<!-- Requirement gathering Section -->
+<section id="requirementGathering" class="requirementGathering-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Requirement gathering</h2>
+        <p class="text-black-50">In order to design our application, we held semi-structured interviews with multiple
+          end-users (GPs) to see their opinion on the direction the project should take; below is an example of one of
+          these interviews that gave us a lot of relevant data points. Unstructured questions that were added during
+          the interview are highlighted in blue.
+        </p>
+        <p class="text-black-50"><b>Q: What are your thoughts on the current system used by the NHS for getting medical
+          information and documents?</b></p>
+        <p class="text-black-50">A: The current GP system we have just pulls up documents and we search through…
+          it works fine but it can take a while looking through all the information because of how big the files are.
+        </p>
+        <p class="text-black-50"><b>Q: If you could improve the system in some way, what improvement would you make?
+        </b></p>
+        <p class="text-black-50">A: I’d speed up the process of looking through the documents somehow. Would save GPs
+          in my clinic a lot of time.
+        </p>
+        <p class="text-black-50"><b>Q: Have you used an example of AI before and if so, in what context?</b></p>
+        <p class="text-black-50">A: I have an Amazon Alexa at home and I use it for simple things like playing music
+          and setting alarms. Sometimes I use it for random questions and facts too.
+        </p>
+        <p class="text-black-50"><b><mark>Q: So when asking your Alexa these questions on occasion, how do you feel
+          about the response you get back? Does it answer your question, and if not how do you react?
+        </mark></b></p>
+        <p class="text-black-50">A: Usually Alexa will answer the question perfectly, but sometimes she responds
+          saying she doesn’t know how to answer. Usually when that happens I just ignore it and search it on my phone
+          instead- her answering it is more for convenience so I don’t have to check myself.
+        </p>
+        <p class="text-black-50"><b>Q: How would you feel about the ability to ask an AI (like Alexa) to get the
+          medical information you get from documents in the current NHS system for you?
+        </b></p>
+        <p class="text-black-50">A: Alexa? (we clarified at this point that the AI was a text based chatbot, not
+          speech based) In that case my biggest issue is that I am trusting the AI to return to me the correct answer-
+          what if it returns an answer from the wrong document, and because I can’t check it I endanger a patient?
+          That would put me off heavily.
+        </p>
+        <p class="text-black-50"><b><mark>Q: Following on from the issue you highlighted, what if you could see the
+          document it took the data from?
+        </mark></b></p>
+        <p class="text-black-50">A: That would put my mind at ease, I can get to things faster and double check that
+          it is from the right source. As long as there is an alternative to search manually, I see it as a win/win.
+        </p>
+        <p class="text-black-50"><b>Q: Finally, where would you want to find this AI to talk to?</b></p>
+        <p class="text-black-50">A: As long as it is accessible to us during appointments at our computer. I work at a
+          local clinic so I don’t move from my room much, however GPs in hospitals move around a lot, so to them the
+          need to be mobile is important. Maybe as a mobile app for convenience?
+        </p>
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
+</section>
+
+<!-- Persona Section -->
+<section id="persona" class="persona-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Personas</h2>
+        <img src="img/harold.jpg" class="img-fluid" alt="">
+        <img src="img/elon.jpg" class="img-fluid" alt="">
+        <h2 class="text-black mb-4">Scenarios</h2>
+        <p class="text-black-50"><b>Scenario 1:</b></p>
+        <p class="text-black-50">
+          Harold is a very experienced GP however he still has some gaps in his knowledge especially in regards to
+          less medical specific information such as patient safeguarding. He had a potentially vulnerable patient
+          coming in to see him and wanted to check that he’d be acting in accordance with the safeguarding protocols
+          in place, so he pulled up the chatbot through an IM application on his computer.
+        </p>
+        <p class="text-black-50">
+          He found interacting with an IM interface very intuitive and user friendly. He also preferred the colloquial
+          format of talking to an AI much better than having to look through documents to find the same information.
+          As the chatbot can be integrated into multiple IM applications, Harold appreciated how easy the application
+          was to access within his own IM and that the security of the IM extended to the messages exchanged with the
+          chatbot. He was able to gain information from the chatbot and his message exchanges were saved on his IM
+          account for him to read later.
+        </p>
+        <p class="text-black-50"><b>Scenario 2:</b></p>
+        <p class="text-black-50">
+          Elon is training to be a GP and wants to expand his knowledge on certain medical areas whilst at home to
+          help him with his training, however he finds it hard to look through long lists of documents with undescriptive
+          titles to try and find the exact information he needs, so he decided to consult our chatbot in order to make
+          this process easier.
+        </p>
+        <p class="text-black-50">
+          Through an internet enabled device, he was able to query our chatbot through the online chat interface and
+          receive a snapshot of a document, containing the information he was requesting. He was also able to save a
+          copy of the full document in case he wishes to find more similar information in the future or to check whether
+          the information from the chatbot was in the correct context.
+        </p>
+        <p class="text-black-50">
+          He really liked that he was able to find specific information without necessarily having the knowledge of
+          the broader field and document it is contained in. He also found being given the full document to read later
+          very helpful.
+        </p>
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
+</section>
+
+<!-- Project goals Section -->
+<section id="goals" class="goals-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Project goals</h2>
+        <p class="text-black-50">Sample text</p>
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+    <!--      TODO: fill in project goals -->
+  </div>
+</section>
+
+<!-- MoSCoW requirement list Section -->
+<section id="MoSCoW" class="MoSCoW-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">MoSCoW requirement list</h2>
+        <p class="text-black-50"><b>MUST HAVE</b></p>
+        <ul>
+          <li>
+            <p class="text-black-50">The ability to ask a chatbot questions about projects and have it return a list
+              that matches the user’s criteria - keywords like FHIR, specific devices. The ability to see where in
+              the country it was done and it’s availability (github links). It should also have the project status.
+            </p>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="3algorithms.html">Algorithms</a>
+          <li>
+            <p class="text-black-50">A database of IXN project data that the user can search through</p>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="4hci.html">HCI</a>
+          <li>
+            <p class="text-black-50">A means of pushing projects to the database through the administrator panel
+            </p>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="5prototype.html">Prototype</a>
+          <li>
+            <p class="text-black-50">Projects returned by the chatbot that display information on:</p>
+            <ul>
+              <li>
+                <p class="text-black-50">Project stage (how far along in development it is in)</p>
+              </li>
+              <li>
+                <p class="text-black-50">The location and partnered organization</p>
+              </li>
+              <li>
+                <p class="text-black-50">The students and employees involved in the project</p>
+              </li>
+              <li>
+                <p class="text-black-50">The abstract and information on the project title</p>
+              </li>
+              <li>
+                <p class="text-black-50">Devices, skills and topics used in the proiect</p>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="6achievement.html">Achievement</A>
+          <li>
+            <p class="text-black-50">A suggestion for similar projects in the event of a no match for a chatbot query</p>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="7plan.html">Plan</a>
+          <li>
+            <p class="text-black-50">A Q&A system for AI related questions</p>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="8appendices.html">Appendices</a>
+          <li>
+            <p class="text-black-50">Provide links to external resources (tutorials, videos etc.) related to the user’s
+              question</p>
+          </li>
+          <li>
+            <p class="text-black-50">Organisation of projects: related projects, with a date field that shows which
+              university worked on what.
+            </p>
+          </li>
+        </ul>
+        <p class="text-black-50"><b>SHOULD HAVE</b></p>
+        <ul>
+          <li>
+            <p class="text-black-50">Ability for local storage of database so academic institutes can host it for
+              their own projects
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">National database linking all databases together
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">A means of updating existing projects through the administrator panel
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">The ability to add multimedia (pptx, photos and videos) to project entries
+              and access these from queries in the chatbot
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">Integrate user authentication with major accounts such as Google or Facebook</p>
+          </li>
+          <li>
+            <p class="text-black-50">Prompted responses to chatbot messages</p>
+          </li>
+          <li>
+            <p class="text-black-50">Ability to allow other databases to be used for information retrieval e.g.
+              When a search happens see if there is any related articles or pubmed publications
+            </p>
+          </li>
+        </ul>
+        <p class="text-black-50"><b>COULD HAVE</b></p>
+        <ul>
+          <li>
+            <p class="text-black-50">Provide summarised data on the company that has given IXN form data and
+              related academic research papers for the user to open and read
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">Ability to categorise tags manually projects into integration projects,
+              efficiency projects and innovation projects
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">Visualisation of the progress of a project (indicating if it has matured or
+              stagnated etc.) - project status update
+            </p>
+          </li>
+          <li>
+            <p class="text-black-50">Integration with the BNF (Medical Database of Pharmaceuticals) to check the
+              legal status of project specifications e.g. status of drugs used in a project</p>
+          </li>
+          <li>
+            <p class="text-black-50">Projects returned by the chatbot that display information on:
+            </p>
+            <ul>
+              <li>
+                <p class="text-black-50">NDA, Ethics agreements and contracts related to the projects</p>
+              </li>
+            </ul>
+          <li>
+            <p class="text-black-50">Plot keyword search results geographically</p>
+          </li>
+        </ul>
+        <p class="text-black-50"><b>WONT HAVE</b></p>
+        <ul>
+          <li>
+            <p class="text-black-50">Answers to non-AI related questions that users would ask</p>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+    <!--      TODO: update MoSCoW list-->
+  </div>
+</section>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Requirements</h1>
-        <!--<h2 class="text-white-50 mx-auto mt-2 mb-5">A list of requirements.</h2>-->
+<!-- Use cases Section -->
+<section id="useCases" class="useCases-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Use cases</h2>
+        <p class="text-black-50">Sample text</p>
       </div>
     </div>
-  </header>
-
-  <!-- Project background Section -->
-  <section id="projectBackground" class="projectBackground-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <p></p>
-          <h2 class="text-black mb-4">Project background</h2>
-          <p class="text-black-50">A previous IXN MSc project created a chatbot with the aim of improving how GPs can
-            access educational material. It was presented to the leading GPs at the RCGP and sparked
-            lots of interest! We’d like to continue to develop and build out this chatbot focusing on a
-            larger and more complex educational resource.</p>
-<!--          TODO: confirm project backgrouns is correct?-->
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-    </div>
-  </section>
-
-  <!-- Requirement gathering Section -->
-  <section id="requirementGathering" class="requirementGathering-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Requirement gathering</h2>
-          <p class="text-black-50">In order to design our application, we held semi-structured interviews with multiple
-            end-users (GPs) to see their opinion on the direction the project should take; below is an example of one of
-            these interviews that gave us a lot of relevant data points. Unstructured questions that were added during
-            the interview are highlighted in blue.
-          </p>
-          <p class="text-black-50"><b>Q: What are your thoughts on the current system used by the NHS for getting medical
-            information and documents?</b></p>
-          <p class="text-black-50">A: The current GP system we have just pulls up documents and we search through…
-            it works fine but it can take a while looking through all the information because of how big the files are.
-          </p>
-          <p class="text-black-50"><b>Q: If you could improve the system in some way, what improvement would you make?
-          </b></p>
-          <p class="text-black-50">A: I’d speed up the process of looking through the documents somehow. Would save GPs
-            in my clinic a lot of time.
-          </p>
-          <p class="text-black-50"><b>Q: Have you used an example of AI before and if so, in what context?</b></p>
-          <p class="text-black-50">A: I have an Amazon Alexa at home and I use it for simple things like playing music
-            and setting alarms. Sometimes I use it for random questions and facts too.
-          </p>
-          <p class="text-black-50"><b><mark>Q: So when asking your Alexa these questions on occasion, how do you feel
-            about the response you get back? Does it answer your question, and if not how do you react?
-          </mark></b></p>
-          <p class="text-black-50">A: Usually Alexa will answer the question perfectly, but sometimes she responds
-            saying she doesn’t know how to answer. Usually when that happens I just ignore it and search it on my phone
-            instead- her answering it is more for convenience so I don’t have to check myself.
-          </p>
-          <p class="text-black-50"><b>Q: How would you feel about the ability to ask an AI (like Alexa) to get the
-            medical information you get from documents in the current NHS system for you?
-          </b></p>
-          <p class="text-black-50">A: Alexa? (we clarified at this point that the AI was a text based chatbot, not
-            speech based) In that case my biggest issue is that I am trusting the AI to return to me the correct answer-
-            what if it returns an answer from the wrong document, and because I can’t check it I endanger a patient?
-            That would put me off heavily.
-          </p>
-          <p class="text-black-50"><b><mark>Q: Following on from the issue you highlighted, what if you could see the
-            document it took the data from?
-          </mark></b></p>
-          <p class="text-black-50">A: That would put my mind at ease, I can get to things faster and double check that
-            it is from the right source. As long as there is an alternative to search manually, I see it as a win/win.
-          </p>
-          <p class="text-black-50"><b>Q: Finally, where would you want to find this AI to talk to?</b></p>
-          <p class="text-black-50">A: As long as it is accessible to us during appointments at our computer. I work at a
-            local clinic so I don’t move from my room much, however GPs in hospitals move around a lot, so to them the
-            need to be mobile is important. Maybe as a mobile app for convenience?
-          </p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-    </div>
-  </section>
-
-  <!-- Persona Section -->
-  <section id="persona" class="persona-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Personas</h2>
-          <img src="img/harold.jpg" class="img-fluid" alt="">
-          <img src="img/elon.jpg" class="img-fluid" alt="">
-          <h2 class="text-black mb-4">Scenarios</h2>
-          <p class="text-black-50"><b>Scenario 1:</b></p>
-          <p class="text-black-50">
-            Harold is a very experienced GP however he still has some gaps in his knowledge especially in regards to
-            less medical specific information such as patient safeguarding. He had a potentially vulnerable patient
-            coming in to see him and wanted to check that he’d be acting in accordance with the safeguarding protocols
-            in place, so he pulled up the chatbot through an IM application on his computer.
-          </p>
-          <p class="text-black-50">
-            He found interacting with an IM interface very intuitive and user friendly. He also preferred the colloquial
-            format of talking to an AI much better than having to look through documents to find the same information.
-            As the chatbot can be integrated into multiple IM applications, Harold appreciated how easy the application
-            was to access within his own IM and that the security of the IM extended to the messages exchanged with the
-            chatbot. He was able to gain information from the chatbot and his message exchanges were saved on his IM
-            account for him to read later.
-          </p>
-          <p class="text-black-50"><b>Scenario 2:</b></p>
-          <p class="text-black-50">
-            Elon is training to be a GP and wants to expand his knowledge on certain medical areas whilst at home to
-            help him with his training, however he finds it hard to look through long lists of documents with undescriptive
-            titles to try and find the exact information he needs, so he decided to consult our chatbot in order to make
-            this process easier.
-          </p>
-          <p class="text-black-50">
-            Through an internet enabled device, he was able to query our chatbot through the online chat interface and
-            receive a snapshot of a document, containing the information he was requesting. He was also able to save a
-            copy of the full document in case he wishes to find more similar information in the future or to check whether
-            the information from the chatbot was in the correct context.
-          </p>
-          <p class="text-black-50">
-            He really liked that he was able to find specific information without necessarily having the knowledge of
-            the broader field and document it is contained in. He also found being given the full document to read later
-            very helpful.
-          </p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-    </div>
-  </section>
-
-  <!-- Project goals Section -->
-  <section id="goals" class="goals-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Project goals</h2>
-          <p class="text-black-50">Sample text</p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-<!--      TODO: fill in project goals -->
-    </div>
-  </section>
-
-  <!-- MoSCoW requirement list Section -->
-  <section id="MoSCoW" class="MoSCoW-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">MoSCoW requirement list</h2>
-          <p class="text-black-50"><b>MUST HAVE</b></p>
-          <ul>
-            <li>
-              <p class="text-black-50">The ability to ask a chatbot questions about projects and have it return a
-                list that matches the user’s criteria</p>
-            </li>
-            <li>
-              <p class="text-black-50">A database of IXN project data that the user can search through</p>
-            </li>
-            <li>
-              <p class="text-black-50">A means of pushing projects to the database through the chatbot</p>
-            </li>
-            <li>
-              <p class="text-black-50">Projects returned by the chatbot that display information on:</p>
-              <ul>
-                <li>
-                  <p class="text-black-50">Project stage (how far along in development it is in)</p>
-                </li>
-                <li>
-                  <p class="text-black-50">The location and partnered organization</p>
-                </li>
-                <li>
-                  <p class="text-black-50">The students and employees involved in the project</p>
-                </li>
-                <li>
-                  <p class="text-black-50">The abstract and information on the project title</p>
-                </li>
-                <li>
-                  <p class="text-black-50">Devices, skills and topics used in the proiect</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="text-black-50">A suggestion for similar projects in the event of a no match for a chatbot query</p>
-            </li>
-            <li>
-              <p class="text-black-50">A Q&A system for AI related questions</p>
-            </li>
-            <li>
-              <p class="text-black-50">Provide links to external resources (tutorials, videos etc.) related to the user’s
-                question</p>
-            </li>
-            <li>
-              <p class="text-black-50">Organisation of projects</p>
-            </li>
-          </ul>
-          <p class="text-black-50"><b>SHOULD HAVE</b></p>
-          <ul>
-            <li>
-              <p class="text-black-50">An extension to add research councils papers to the database of projects through
-                NLP analysis of the documents</p>
-            </li>
-            <li>
-              <p class="text-black-50">Ability for local storage of database so academic institutes can host it for
-                their own projects</p>
-            </li>
-            <li>
-              <p class="text-black-50">A means of updating existing projects through the chatbot</p>
-            </li>
-            <li>
-              <p class="text-black-50">The ability to add multimedia (photos and videos) to project entries and access
-                these from queries in the chatbot</p>
-            </li>
-            <li>
-              <p class="text-black-50">Integrate user authentication with major accounts such as Google or Facebook</p>
-            </li>
-            <li>
-              <p class="text-black-50">Prompted responses to chatbot messages</p>
-            </li>
-            <li>
-              <p class="text-black-50">Ability to allow other databases to be used for information retrieval</p>
-            </li>
-          </ul>
-          <p class="text-black-50"><b>COULD HAVE</b></p>
-          <ul>
-            <li>
-              <p class="text-black-50">Provide access to the original IXN forms and related academic research papers
-                for the user to open and read</p>
-            </li>
-            <li>
-              <p class="text-black-50">Ability to split projects into integration projects, efficiency projects and
-                innovation projects</p>
-            </li>
-            <li>
-              <p class="text-black-50">Visualisation of the progress of a project (indicating if it has matured or
-                stagnated etc.)</p>
-            </li>
-            <li>
-              <p class="text-black-50">Integration with the BNF (Medical Database of Pharmaceuticals) to check the
-                legal status of project specifications e.g. status of drugs used in a project</p>
-            </li>
-            <li>
-              <p class="text-black-50">Projects returned by the chatbot that display information on:
-              </p>
-              <ul>
-                <li>
-                  <p class="text-black-50">NDA, Ethics agreements and contracts related to the projects</p>
-                </li>
-                <li>
-                  <p class="text-black-50">Final mark given</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="text-black-50">National database linking all databases together</p>
-            </li>
-            <li>
-              <p class="text-black-50">Plot keyword search results geographically</p>
-            </li>
-          </ul>
-          <p class="text-black-50"><b>WONT HAVE</b></p>
-          <ul>
-            <li>
-              <p class="text-black-50">Answers to non-AI related questions that users would ask</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-<!--      TODO: update MoSCoW list-->
-    </div>
-  </section>
-
-  <!-- Use cases Section -->
-  <section id="useCases" class="useCases-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Use cases</h2>
-          <p class="text-black-50">Sample text</p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-<!--      TODO: create use case diagrams-->
-    </div>
-  </section>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+    <!--      TODO: create use case diagrams-->
+  </div>
+</section>
 
 <!--  &lt;!&ndash; Footer &ndash;&gt;-->
 <!--  <footer class="bg-black small text-center text-white-50">-->
@@ -368,15 +374,15 @@
 <!--    </div>-->
 <!--  </footer>-->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
 
 </body>
 
