@@ -80,7 +80,12 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2 class="text-black mb-4">Models</h2>
-          <p class="text-black-50">Sample text</p>
+          <p class="text-black-50">Our chatbot will be powered using the Microsoft Language Understanding Intelligent Service (LUIS), which is an algorithm used to identify the intent behind natural language. The idea behind the use of this algorithm is to analyse natural language and get what exactly a user is asking for.
+          </p>
+          <img src="img/LUIS%20Explanation.png" class="img-thumbnail" alt="" width="1100">
+          <p>
+            It takes a sentence such as the one below and breaks it down into an intent (what the user wants) and an entity (something the user wants to do things with). We can then create individual functions for each type of user intent. The algorithm is key to allowing users to speak in natural language just as if they were talking to a real person; without it, there would be no way of understanding user speech and it would feel a lot more like a command line application, typing in set responses.
+          </p>
         </div>
       </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
@@ -93,7 +98,23 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2 class="text-black mb-4">Experiment setup</h2>
-          <p class="text-black-50">Sample text</p>
+          <p class="text-black mb-4">LUIS first needs to be trained with sample sentences for each type of intent. So, using the previous example, the user intent “Show Projects” can be written in many different ways:</p>
+          <p class="text-black-50" style="font-size:20px">
+            <i>"Find all projects related to AI"</i><br>
+            <i>"List projects that use Artificial Intelligence"</i><br>
+            <i>"Can you search for AI projects"</i><br>
+            <i>"What projects use Artificial Intelligence?"</i><br>
+          </p>
+          <p>Our testing consists of passing in a large dataset of these example sentences for each intent, so that LUIS is able to identify an intent for any user message. After testing,
+          LUIS should be able to recognise any message sent by a user and it is then up to us to write the code that responds to this request.<br><br>
+          When passing in a sentence, a score between 0 and 1 is assigned to how close it matches with each intents:</p>
+          <img src="img/LUIS%20Training.png" class="img-thumbnail" alt="" width="1100">
+          <p class="text-black mb-4">
+            LUIS then gets the intent with the highest score and returns it as the best match. To test our LUIS setup, we passed in test sentences and checked which intent they
+            were being mapped to. If the intent returned wasn't the correct one for the sentence, it was considered a test failure, and LUIS needed fixing to accommodate for this.<br><br>
+            We will use a sample file of messages to test LUIS consisting of valid and invalid chatbot sentences. For the sentences that failed, we will record them and figure out
+            why LUIS isn't matching them.
+          </p>
         </div>
       </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
@@ -106,38 +127,45 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2 class="text-black mb-4">Experiment results</h2>
-          <p class="text-black-50">Sample text</p>
+          <p class="text-black mb-4">
+            Each test sentence we inputted returned a JSON file which had the best matched intent returned as an attribute, as you can see below:
+          </p>
+          <img src="img/LUIS%20Test%20Result.png" class="img-thumbnail" alt="" width="1100">
+          <p class="text-black mb-4">
+            The testing for LUIS is still to be completed, as our team is still yet to integrate LUIS into the Microsoft Bot Framework. We shall begin testing
+            during our first sprint in February when we will start adding LUIS into our prototype.
+          </p>
         </div>
       </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
     </div>
   </section>
 
-  <!-- Discussions Section -->
-  <section id="discussions" class="Discussions-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Discussions</h2>
-          <p class="text-black-50">Sample text</p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-    </div>
-  </section>
+<!--  &lt;!&ndash; Discussions Section &ndash;&gt;-->
+<!--  <section id="discussions" class="Discussions-section">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-lg-12 mx-auto">-->
+<!--          <h2 class="text-black mb-4">Discussions</h2>-->
+<!--          <p class="text-black-50">Sample text</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash;<img src="img/ipad.png" class="img-fluid" alt="">&ndash;&gt;-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <!-- Conclusion Section -->
-  <section id="conclusion" class="conclusion-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">conclusion</h2>
-          <p class="text-black-50">Sample text</p>
-        </div>
-      </div>
-      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-    </div>
-  </section>
+<!--  &lt;!&ndash; Conclusion Section &ndash;&gt;-->
+<!--  <section id="conclusion" class="conclusion-section">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-lg-12 mx-auto">-->
+<!--          <h2 class="text-black mb-4">conclusion</h2>-->
+<!--          <p class="text-black-50">Sample text</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash;<img src="img/ipad.png" class="img-fluid" alt="">&ndash;&gt;-->
+<!--    </div>-->
+<!--  </section>-->
 
 <!--  &lt;!&ndash; Footer &ndash;&gt;-->
 <!--  <footer class="bg-black small text-center text-white-50">-->
