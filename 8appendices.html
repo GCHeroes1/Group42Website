@@ -111,21 +111,21 @@
           <p><b>Pre-Requisites</b></p>
           <ul>
             <li>Git installed on cmd or bash terminal</li>
-            <li>.NET Core Runtime & SDK</li>
+            <li>.NET Core Runtime & SDK (dotnet version 2.2 - https://aka.ms/dotnet-core-applaunch?framework=Microsoft.AspNetCore.App&framework_version=2.1.1&arch=x64&rid=ubuntu.18.04-x64)</li>
             <li>Microsoft Bot Framework Emulator</li>
           </ul>
           <p><b>Deployment Instructions</b></p>
-          <p class="text-black-50">First, we need to start the server on the localhost for chatbot clients to connect to:</p>
+          <p class="text-black mb-4">First, we need to start the server on the localhost for chatbot clients to connect to:</p>
           <ol>
-            <li>Open your terminal/CMD and type in: git clone https://github.com/addybongo/entrepreneurChatbot 'directoryNameToCloneTo'</li>
-            <li>Navigate to the directory you cloned into using cd</li>
-            <li>Run command cd prototypeVer1 to enter the project directory</li>
-            <li>Run command dotnet run</li>
+            <li>Open your terminal/CMD and type: "git clone https://github.com/addybongo/entrepreneurChatbot [directoryNameToCloneTo]"</li>
+            <li>Navigate to the directory you cloned into using cd ("cd path/to/directory")</li>
+            <li>Run command "cd prototypeVer1" to enter the project directory</li>
+            <li>Run command "dotnet run"</li>
             </ol>
           <p class="text-black mb-4">If this is successful, the result should be this message displayed on the command line</p>
-          <img src="img/Deployment%20Server%20Message.png" class="img-thumbnail" alt="">
+          <img src="img/Deployment%20Server%20Message.png" class="img-thumbnail" width="100%" alt="">
 
-          <p class="text-black-50"><br>Second, we need to connect to our chatbot as a client. As we are still in development, our chatbot isn't connected to an IM interface like Facebook or Whatsapp.
+          <p class="text-black mb-4"><br>Second, we need to connect to our chatbot as a client. As we are still in development, our chatbot isn't connected to an IM interface like Facebook or Whatsapp.
           We instead are using the Microsoft Bot Emulator, to connect to our server. We do this using the following instructions:</p>
           <ol>
             <li>Open the Bot Emulator</li>

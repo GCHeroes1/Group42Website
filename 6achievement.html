@@ -300,13 +300,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 mx-auto">
+        <p></p>
         <h2 class="text-black mb-4">List of known Bugs</h2>
-        <p class="text-black mb-4"><b>Incorrect Parser Matches</b></p>
-        <p class="text-black mb-4">When the parser matches the row names to the field names of the database, they are given a score for how similar they are to
+        <p class="text-black"><b>Incorrect Parser Matches</b></p>
+        <p class="text-black-50">When the parser matches the row names to the field names of the database, they are given a score for how similar they are to
         each other. Currently, even though it finds the best match for each database field, it doesn't have a threshold score for how similar they should be. This means
         that it might match up a field and row name with the highest score, but it may also be a really poor score i.e. they aren't actually remotely close but are
         being paired together because there isn't any better match. As an example: </p>
-        <p><i>Unity Assets for Project</i> could be given a best match with <i>Proposed Project Description</i>, but it obviously shouldn't be. Although this is really rare,
+        <p class="text-black-50">"<i>Unity Assets for Project</i> could be given a best match with <i>Proposed Project Description</i>, but it obviously shouldn't be. Although this is really rare,
           if a client for the IXN form was to rewrite the form themselves, they could cause this bug because there are no other names to match with. </p>
         <p class="text-black-50">This bug will need fixing through testing, to see at what score we should apply a cut off and block a match.</p>
       </div>
