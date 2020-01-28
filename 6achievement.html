@@ -310,6 +310,9 @@
         <p class="text-black-50">"<i>Unity Assets for Project</i> could be given a best match with <i>Proposed Project Description</i>, but it obviously shouldn't be. Although this is really rare,
           if a client for the IXN form was to rewrite the form themselves, they could cause this bug because there are no other names to match with. </p>
         <p class="text-black-50">This bug will need fixing through testing, to see at what score we should apply a cut off and block a match.</p>
+        <p class="text-black"><b>Table Duplicates</b></p>
+        <p class="text-black-50">If we push a project that has been pushed before, the database doesn't detect this and creates a duplicate entry. We need to develop a way
+        of detecting a duplicate value before a push and execute an update query on the original value instead.</p>
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
