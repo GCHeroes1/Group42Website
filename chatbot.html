@@ -5,9 +5,46 @@
     <title>Chatbot</title>
     <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
 </head>
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+            crossorigin="anonymous"
+            src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
+    ></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #webchat {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-    <iframe src='https://webchat.botframework.com/embed/SbQPdNsohtCDVoVFNewBot?s=4ISeMdKQK00.4a03sDAbt2nAj8ZhVI2Lwzhywe_KaeD8-FlD3kkdVPs'  style='min-width: 400px; width: 100%; min-height: 1150px;'></iframe>
+<div id="webchat" role="main"></div>
+<script>
+    window.WebChat.renderWebChat(
+        {
+            directLine: window.WebChat.createDirectLine({
+                token: '-zOFFHVdVRI.7XCLAyHHrGp4I1t6vcL3OHAigT8NxFksu5PXf78NWiI'
+            }),
+            locale: 'en-US',
+            botAvatarInitials: 'BOT',
+            userAvatarInitials: 'USER'
+        },
+        document.getElementById('webchat')
+    );
+</script>
 </body>
+</html>
 
 <!--<script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>-->
 <!--<script>-->
