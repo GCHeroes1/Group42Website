@@ -103,41 +103,7 @@
   </div>
 </section>
 
-<link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
 </head>
-<body>
-<div>
-  <div id="bot" />
-</div>
-</body>
-
-<script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
-<script>
-  var user = {
-    id: 'user-id',
-    name: 'user name'
-  };
-  var botConnection = new BotChat.DirectLine({
-    token: 'Xbw92DvUEjE.kxpVaY1YMiiq-C82UUC4493rUtUDlZvEBCEnGUzY4vo',
-    user: user
-  });
-  BotChat.App({
-    user: user,
-    botConnection: botConnection,
-    bot: { id: 'zKGzMnWnZCOOiNrv', name: 'RCGPChatbot' },
-    resize: 'detect'
-  }, document.getElementById("bot"));
-  botConnection
-          .postActivity({
-            from: user,
-            name: 'requestWelcomeDialog',
-            type: 'event',
-            value: ''
-          })
-          .subscribe(function (id) {
-            console.log('"trigger requestWelcomeDialog" sent');
-          });
-</script>
 
 <!-- Key features Section -->
 <!--TODO Adnan update from video please-->
