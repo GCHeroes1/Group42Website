@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+</head>
+<body>
+<div>
+    <div id="bot" />
+</div>
+</body>
+
+<script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+<script>
+    var user = {
+        id: 'user-id',
+        name: 'user name'
+    };
+    var botConnection = new BotChat.DirectLine({
+        token: 'rL0okbkBago.3ZAAmxRYO4a2eqZoZbiB3dFO0XTj_TBb7GRmB23WjE0',
+        user: user
+    });
+    BotChat.App({
+        user: user,
+        botConnection: botConnection,
+        bot: { id: 'zKGzMnWnZCOOiNrv', name: 'RCGPChatbot' },
+        resize: 'detect'
+    }, document.getElementById("bot"));
+    botConnection
+        .postActivity({
+            from: user,
+            name: 'requestWelcomeDialog',
+            type: 'event',
+            value: ''
+        })
+        .subscribe(function (id) {
+            console.log('"trigger requestWelcomeDialog" sent');
+        });
+</script>
+</html>

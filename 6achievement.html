@@ -104,8 +104,13 @@
           <tr>
             <td>1</td>
             <td>The ability to ask a chatbot questions about projects and have it return a list that matches the
-              user’s criteria - keywords like FHIR, specific devices. The ability to see where in the country it
-              was done and it’s availability (github links). It should also have the project status.
+              user’s criteria:
+              <ul>
+                <li>Organization partner and individuals leading the project</li>
+                <li>Skills required, data samples and devices used</li>
+                <li>keywords associated with the project e.g. AI, blockchain, data mining</li>
+                <li>The location of the project</li>
+              </ul>
             </td>
             <td>Must</td>
             <td style="text-align: center;">✓</td>
@@ -113,14 +118,14 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>A database of IXN project data that the user can search through</td>
+            <td>A database of project data that the user can search through</td>
             <td>Must</td>
             <td style="text-align: center;">✓</td>
-            <td>Adnan/Rajesh</td>
+            <td>Rajesh</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>A means of pushing projects to the database through the administrator panel
+            <td>A means of pushing and updating projects to the database through an administrator program
             </td>
             <td>Must</td>
             <td style="text-align: center;">✓</td>
@@ -128,49 +133,38 @@
           </tr>
           <tr>
             <td>4</td>
-            <td>Projects returned by the chatbot that display information on: Project stage, Location and partnered
-              organisation, students and employees involved in the project, abstract and information on the project
-              title, devices, skills and topics used in the project
-            </td>
-            <td>Must</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>A suggestion for similar projects in the event of a no match for a chatbot query
-            </td>
-            <td>Must</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>A Q&A system for AI related questions
-            </td>
-            <td>Must</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Provide links to external resources (tutorials, videos etc.) related to the user’s question
-            </td>
-            <td>Must</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Organisation of projects: related projects, with a date field that shows which university worked on
-              what.
+            <td>Projects returned by the chatbot that display information on:
+              <ul>
+                <li>Project title and description</li>
+                <li>Skills required, data samples and devices used</li>
+                <li>Partner organization and contact information</li>
+                <li>The location of the project</li>
+                <li>The project start and end date</li>
+                <li>The date uploaded</li>
+              </ul>
             </td>
             <td>Must</td>
             <td style="text-align: center;">✓</td>
-            <td></td>
+            <td>Adnan</td>
           </tr>
           <tr>
-            <td>9</td>
+            <td>5</td>
+            <td>LUIS integration so that the chatbot analyses human speech, rather than specific words and commands.
+            </td>
+            <td>Must</td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan/Rajesh</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>A parser for IXN forms so that users can fill out a document and upload them, rather than fill out a form.
+            </td>
+            <td>Must</td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
+          </tr>
+          <tr>
+            <td>7</td>
             <td>Ability for local storage of database so academic institutes can host it for their own projects
             </td>
             <td>Should</td>
@@ -178,107 +172,82 @@
             <td></td>
           </tr>
           <tr>
-            <td>10</td>
+            <td>8</td>
             <td>National database linking all databases together
             </td>
             <td>Should</td>
             <td style="text-align: center;">✓</td>
-            <td></td>
+            <td>Rajesh</td>
           </tr>
           <tr>
-            <td>11</td>
-            <td>A means of updating existing projects through the administrator panel
-            </td>
-            <td>Should</td>
-            <td style="text-align: center;">✓</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>The ability to add multimedia (pptx, photos and videos) to project entries and access these from
-              queries in the chatbot
-            </td>
-            <td>Should</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Integrate user authentication with major accounts such as Google or Facebook
-            </td>
-            <td>Should</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Prompted responses to chatbot messages
+            <td>9</td>
+            <td>Display information in Microsoft Adaptive Card format to make it easy to read
             </td>
             <td>Should</td>
             <td style="text-align: center;">✓</td>
             <td>Adnan</td>
           </tr>
           <tr>
-            <td>15</td>
-            <td>Ability to allow other databases to be used for information retrieval e.g. When a search happens see
-              if there is any related articles or pubmed publications
+            <td>10</td>
+            <td>Prompted responses on the card so that the user can intuitively click through as well as send messages
             </td>
             <td>Should</td>
-            <td style="text-align: center;">✗</td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Provide a summary on project partners including:
+              <ul>
+                <li>Organization Address</li>
+                <li>What they do</li>
+                <li>Contact information to get in touch</li>
+              </ul>
+            </td>
+            <td>Could</td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Store information on contract and NDA information and its progress. This includes:
+              <ul>
+                <li>Who signed the contract or NDA</li>
+                <li>When it was signed</li>
+                <li>Comments on the specifics of both</li>
+              </ul>
+            </td>
+            <td>Could</td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
+          </tr>
+            <td>13</td>
+            <td>Visualisation of the progress of contracts and NDA as they are completed
+            </td>
+            <td>Could</td>
+            <td style="text-align: center;">✓</td>
             <td></td>
           </tr>
           <tr>
-            <td>16</td>
-            <td>Provide summarised data on the company that has given IXN form data and related academic research
-              papers for the user to open and read
+            <td>14</td>
+            <td>Projects from academic institutions can be inserted with additional data, including:
+              <ul>
+                <li>Ethics assessments, agreements and assessors involved</li>
+                <li>Details of academic assessment and when they occurred</li>
+                <li>The institution they were from</li>
+              </ul>
             </td>
             <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
           </tr>
           <tr>
-            <td>17</td>
-            <td>Ability to categorise tags manually projects into integration projects, efficiency projects and
-              innovation projects
+            <td>15</td>
+            <td>Add images to the cards related to the project and organization to prevent a block of text being presented to the user e.g. Company Logos
             </td>
             <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>Visualisation of the progress of a project (indicating if it has matured or stagnated etc.) - project
-              status update
-            </td>
-            <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>Integration with the BNF (Medical Database of Pharmaceuticals) to check the legal status of project
-              specifications e.g. status of drugs used in a project
-            </td>
-            <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>Projects returned by the chatbot that display information on: NDA, Ethics agreements and contracts
-              related to the projects
-            </td>
-            <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>21</td>
-            <td>Plot keyword search results geographically
-            </td>
-            <td>Could</td>
-            <td style="text-align: center;">✗</td>
-            <td></td>
+            <td style="text-align: center;">✓</td>
+            <td>Adnan</td>
           </tr>
           <tr>
             <td colspan="2">Key functionalities (must have and should have)</td>
