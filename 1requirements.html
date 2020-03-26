@@ -230,55 +230,101 @@
     <div class="row">
       <div class="col-lg-12 mx-auto">
         <h2 class="text-black mb-4">MoSCoW requirement list</h2>
+        <p class="text-black-50"> Yellow indicates that the old requirement has evolved into a new green one that follows,
+        green indicates that it is a new requirement, grey indicates an unchanged requirement, red indicates a requirement
+        which was removed due to the reduction in team size after the first prototype was completed, the requirements
+        were reduced in line with the new capability of the team</p>
         <p class="text-black-50"><b>MUST HAVE</b></p>
         <ul>
           <li>
-            <p class="text-black-50">The ability to ask a chatbot questions about projects and have it return a list
+            <p class="text-warning">The ability to ask a chatbot questions about projects and have it return a list
               that matches the user’s criteria - keywords like FHIR, specific devices. The ability to see where in
               the country it was done and it’s availability (github links). It should also have the project status.
             </p>
           </li>
           <li>
+            <p class="text-success">The ability to ask a chatbot questions about projects and have it return a list that matches the user’s criteria:</p>
+            <ul>
+              <li>
+                <p class="text-success">Organization partner and individuals leading the project</p>
+              </li>
+              <li>
+                <p class="text-success">Skills required, data samples and devices used</p>
+              </li>
+              <li>
+                <p class="text-success">keywords associated with the project e.g. AI, blockchain, data mining</p>
+              </li>
+              <li>
+                <p class="text-success">The location of the project</p>
+              </li>
+            </ul>
+          </li>
+          <li>
             <p class="text-black-50">A database of IXN project data that the user can search through</p>
           </li>
           <li>
-            <p class="text-black-50">A means of pushing projects to the database through the administrator panel
-            </p>
+            <p class="text-black-50">A means of pushing projects to the database through the administrator panel</p>
           </li>
           <li>
             <p class="text-black-50">Projects returned by the chatbot that display information on:</p>
             <ul>
               <li>
-                <p class="text-black-50">Project stage (how far along in development it is in)</p>
+                <p class="text-warning">Project stage (how far along in development it is in)</p>
               </li>
               <li>
-                <p class="text-black-50">The location and partnered organization</p>
+                <p class="text-warning">The location and partnered organization</p>
               </li>
               <li>
-                <p class="text-black-50">The students and employees involved in the project</p>
+                <p class="text-warning">The students and employees involved in the project</p>
               </li>
               <li>
-                <p class="text-black-50">The abstract and information on the project title</p>
+                <p class="text-warning">The abstract and information on the project title</p>
               </li>
               <li>
-                <p class="text-black-50">Devices, skills and topics used in the proiect</p>
+                <p class="text-warning">Devices, skills and topics used in the proiect</p>
+              </li>
+              <li>
+                <p class="text-success">Project title and description</p>
+              </li>
+              <li>
+                <p class="text-success">Skills required, data samples and devices used</p>
+              </li>
+              <li>
+                <p class="text-success">Partner organization and contact information</p>
+              </li>
+              <li>
+                <p class="text-success">The location of the project</p>
+              </li>
+              <li>
+                <p class="text-success">The project start and end date</p>
+              </li>
+              <li>
+                <p class="text-success">The date uploaded</p>
               </li>
             </ul>
           </li>
           <li>
-            <p class="text-black-50">A suggestion for similar projects in the event of a no match for a chatbot query</p>
+            <p class="text-danger">A suggestion for similar projects in the event of a no match for a chatbot query</p>
           </li>
           <li>
-            <p class="text-black-50">A Q&A system for AI related questions</p>
+            <p class="text-danger">A Q&A system for AI related questions</p>
           </li>
           <li>
-            <p class="text-black-50">Provide links to external resources (tutorials, videos etc.) related to the user’s
+            <p class="text-danger">Provide links to external resources (tutorials, videos etc.) related to the user’s
               question</p>
           </li>
           <li>
-            <p class="text-black-50">Organisation of projects: related projects, with a date field that shows which
+            <p class="text-danger">Organisation of projects: related projects, with a date field that shows which
               university worked on what.
             </p>
+          </li>
+          <li>
+            <p class="text-success">LUIS integration so that the chatbot analyses human speech, rather than specific
+              words and commands.</p>
+          </li>
+          <li>
+            <p class="text-success">A parser for IXN forms so that users can fill out a document and upload them,
+              rather than fill out a form.</p>
           </li>
         </ul>
         <p class="text-black-50"><b>SHOULD HAVE</b></p>
@@ -293,22 +339,26 @@
             </p>
           </li>
           <li>
-            <p class="text-black-50">A means of updating existing projects through the administrator panel
-            </p>
+            <p class="text-success">Display information in Microsoft Adaptive Card format to make it easy to read</p>
           </li>
           <li>
-            <p class="text-black-50">The ability to add multimedia (pptx, photos and videos) to project entries
+            <p class="text-warning">Prompted responses to chatbot messages</p>
+          </li>
+          <li>
+            <p class="text-success">Prompted responses on the card so that the user can intuitively click through as
+              well as send messages</p>
+          </li>
+          <li>
+            <p class="text-danger">The ability to add multimedia (pptx, photos and videos) to project entries
               and access these from queries in the chatbot
             </p>
           </li>
           <li>
-            <p class="text-black-50">Integrate user authentication with major accounts such as Google or Facebook</p>
+            <p class="text-danger">Integrate user authentication with major accounts such as Google or Facebook</p>
           </li>
+
           <li>
-            <p class="text-black-50">Prompted responses to chatbot messages</p>
-          </li>
-          <li>
-            <p class="text-black-50">Ability to allow other databases to be used for information retrieval e.g.
+            <p class="text-danger">Ability to allow other databases to be used for information retrieval e.g.
               When a search happens see if there is any related articles or pubmed publications
             </p>
           </li>
@@ -316,34 +366,70 @@
         <p class="text-black-50"><b>COULD HAVE</b></p>
         <ul>
           <li>
-            <p class="text-black-50">Provide summarised data on the company that has given IXN form data and
+            <p class="text-warning">Provide summarised data on the company that has given IXN form data and
               related academic research papers for the user to open and read
             </p>
           </li>
           <li>
-            <p class="text-black-50">Ability to categorise tags manually projects into integration projects,
+            <p class="text-success">Provide a summary on project partners including:</p>
+            <ul>
+              <li>
+                <p class="text-success">Organization address</p>
+              </li>
+              <li>
+                <p class="text-success">What they do</p>
+              </li>
+              <li>
+                <p class="text-success"> Contact information to get in touch</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="text-danger">Ability to categorise tags manually projects into integration projects,
               efficiency projects and innovation projects
             </p>
           </li>
           <li>
-            <p class="text-black-50">Visualisation of the progress of a project (indicating if it has matured or
+            <p class="text-warning">Visualisation of the progress of a project (indicating if it has matured or
               stagnated etc.) - project status update
             </p>
           </li>
           <li>
-            <p class="text-black-50">Integration with the BNF (Medical Database of Pharmaceuticals) to check the
+            <p class="text-success">Visualisation of the progress of contracts and NDA as they are completed</p>
+          </li>
+          <li>
+            <p class="text-danger">Integration with the BNF (Medical Database of Pharmaceuticals) to check the
               legal status of project specifications e.g. status of drugs used in a project</p>
           </li>
           <li>
-            <p class="text-black-50">Projects returned by the chatbot that display information on:
+            <p class="text-warning">Projects returned by the chatbot that display information on:
             </p>
             <ul>
               <li>
-                <p class="text-black-50">NDA, Ethics agreements and contracts related to the projects</p>
+                <p class="text-warning">NDA, Ethics agreements and contracts related to the projects</p>
               </li>
             </ul>
+          </li>
           <li>
-            <p class="text-black-50">Plot keyword search results geographically</p>
+            <p class="text-success">Projects from academic institutions can be inserted with additional data, including:</p>
+            <ul>
+              <li>
+                <p class="text-success">Ethics assessments, agreements and assessors involved</p>
+              </li>
+              <li>
+                <p class="text-success">Details of academic assessment and when they occurred</p>
+              </li>
+              <li>
+                <p class="text-success">The institution they were from</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="text-danger">Plot keyword search results geographically</p>
+          </li>
+          <li>
+            <p class="text-success">Add images to the cards related to the project and organization to prevent a block
+              of text being presented to the user e.g. Company Logos</p>
           </li>
         </ul>
         <p class="text-black-50"><b>WONT HAVE</b></p>
