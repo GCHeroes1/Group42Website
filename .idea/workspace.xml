@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f80ce89f-effb-477e-99b8-3a8a1d12a20c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3algorithms.html" beforeDir="false" afterPath="$PROJECT_DIR$/3algorithms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6achievement.html" beforeDir="false" afterPath="$PROJECT_DIR$/6achievement.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="15919" />
+    <option name="totalTimeSeconds" value="16482" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -92,7 +90,7 @@
       <workItem from="1580230946233" duration="1102000" />
       <workItem from="1580232961848" duration="37000" />
       <workItem from="1585107413687" duration="10618000" />
-      <workItem from="1585254226553" duration="5024000" />
+      <workItem from="1585254226553" duration="6351000" />
     </task>
     <task id="LOCAL-00001" summary="Algorithms Completed">
       <created>1579628320800</created>
