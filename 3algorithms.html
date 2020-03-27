@@ -98,7 +98,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Experiment setup</h2>
+          <h2 class="text-black mb-4">LUIS Setup</h2>
           <p class="text-black mb-4">LUIS first needs to be trained with sample sentences for each type of intent. So, using the previous example, the user intent “Show Projects” can be written in many different ways:</p>
           <p class="text-black-50" style="font-size:20px">
             <i>"Find all projects related to AI"</i><br>
@@ -127,19 +127,54 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="text-black mb-4">Experiment results</h2>
+          <h2 class="text-black mb-4">LUIS Deployment Results</h2>
           <p class="text-black mb-4">
-            Each test sentence we inputted returned a JSON file which had the best matched intent returned as an attribute, as you can see below:
+            Over the past few months, we were able to train our chatbot to recognise more than just one intent. It now consists
+            of these complete intents supporting a range of functions within the chatbot:
           </p>
-          <img src="img/LUIS%20Test%20Result.png" class="img-thumbnail" alt="" width="1100">
+          <img src="img/LUIS%20intents.png" class="img-thumbnail" alt="" width="1100">
           <p class="text-black mb-4">
-            The testing for LUIS is still to be completed, as our team is still yet to integrate LUIS into the Microsoft Bot Framework. We shall begin testing
-            during our first sprint in February when we will start adding LUIS into our prototype.
+            <br>
+            The testing for LUIS was done over a period of time. By debugging our chatbot, every command sent was also saved by LUIS
+             for us to review. In the end, we recieved 1419 messages recieved by our LUIS app for us to train using. This ensured that
+             our chatbot was able to map as many messages as possible to the correct commands.
           </p>
         </div>
       </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
     </div>
+  </section>
+
+  <section id="miner" class="miner-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">IXN Form Parser</h2>
+        <p class="text-black mb-4">
+          As part of our solution, we developed a parsing program that was able to take IXN forms, in word document format,
+          parse them into a list data structure in Python and push them to a database. We did this by accessing the XML
+          file encoding behind .docx files. Using this, we were able to isolate the table tags and find the text enclosed
+          in this table. We then extracted this text and constructed a tuple of field and value pairs.
+        </p>
+      </div>
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Fuzzy String Matching</h2>
+        <p class="text-black mb-4">
+          To compensate for the fact that people filling out forms may choose to change the spelling of fields, or even
+          add their own in, we created an algorithm that correctly mapped fields to the order we had them in our database schema.
+          We did this by using a fuzzy string matching algorithm, that compared how close to strings were related.
+          <br><br>
+          The issue with this was that a lot of times, collisions would occur, in which the same field would be mapped twice, to
+          2 different columns of our database schema. To fix this, we had to store the best matches for each column of the table and
+          whenever a collision occurred, swap out the field that mapped with the lowest similarity score to its next best alternative. The
+          issue with this was that sometimes the alternative swapped out also had already been mapped before. As a result, the algorithm
+          needed to resolve this was a complex recursive function that checked everything up to that value in the mapped fields
+          each time there was a swap.
+        </p>
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
   </section>
 
 <!--  &lt;!&ndash; Discussions Section &ndash;&gt;-->

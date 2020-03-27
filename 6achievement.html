@@ -167,7 +167,7 @@
             <td>Ability for local storage of database so academic institutes can host it for their own projects
             </td>
             <td>Should</td>
-            <td style="text-align: center;">✗</td>
+            <td style="text-align: center;">✓</td>
             <td></td>
           </tr>
           <tr>
@@ -250,37 +250,13 @@
           </tr>
           <tr>
             <td colspan="2">Key functionalities (must have and should have)</td>
-            <td colspan="3" style="text-align: center;">28.6%</td>
+            <td colspan="3" style="text-align: center;">100%</td>
           </tr>
           <tr>
             <td colspan="2">Optional functionalities</td>
-            <td colspan="3" style="text-align: center;">0%</td>
+            <td colspan="3" style="text-align: center;">100%</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
-  </div>
-</section>
-
-<!-- List of known bugs Section -->
-<section id="bugs" class="bugs-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <p></p>
-        <h2 class="text-black mb-4">List of known Bugs</h2>
-        <p class="text-black"><b>Incorrect Parser Matches</b></p>
-        <p class="text-black-50">When the parser matches the row names to the field names of the database, they are given a score for how similar they are to
-        each other. Currently, even though it finds the best match for each database field, it doesn't have a threshold score for how similar they should be. This means
-        that it might match up a field and row name with the highest score, but it may also be a really poor score i.e. they aren't actually remotely close but are
-        being paired together because there isn't any better match. As an example: </p>
-        <p class="text-black-50">"<i>Unity Assets for Project</i> could be given a best match with <i>Proposed Project Description</i>, but it obviously shouldn't be. Although this is really rare,
-          if a client for the IXN form was to rewrite the form themselves, they could cause this bug because there are no other names to match with. </p>
-        <p class="text-black-50">This bug will need fixing through testing, to see at what score we should apply a cut off and block a match.</p>
-        <p class="text-black"><b>Table Duplicates</b></p>
-        <p class="text-black-50">If we push a project that has been pushed before, the database doesn't detect this and creates a duplicate entry. We need to develop a way
-        of detecting a duplicate value before a push and execute an update query on the original value instead.</p>
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
