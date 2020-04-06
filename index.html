@@ -59,9 +59,9 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="8appendices.html">Appendices</a>
         </li>
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>-->
-<!--        </li>-->
+        <!--        <li class="nav-item">-->
+        <!--          <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>-->
+        <!--        </li>-->
       </ul>
     </div>
   </div>
@@ -71,7 +71,7 @@
 <header class="masthead">
   <div class="container d-flex h-100 align-items-center">
     <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">A Chatbot for Healthcare Project Mapping in the UK</h1>
+      <h1 class="mx-auto my-0 text-uppercase">A Chatbot for Healthcare Project Mapping in the UK</h1>
     </div>
   </div>
 </header>
@@ -96,20 +96,20 @@
           through clutter.
         </p>
         <p class="text-black-50">The final impact of our project is that we now have a database to serve as the national
-        database for the collation of project data. Any authorised admin can contribute to this collection of data, they
-        will have an easy to use administrator panel which will assist them in adding information to the database,
-        as well as updating the existing information. Our target audience; entrepreneurs, academics and research
-        institutes, will be able to use our publicly available chatbot service in order to do research on any number
-        of projects which are stored in the database. This will be an ever growing set of information and the
-        capability of our chatbot will only grow as we gain more training data for our integrated Language
-        Understanding Intelligent Service (LUIS). We will be able to provide users with more and more accurate and
-        helpful search results, to any number of users of any scope, regardless of which sector they work in, our
-        chatbot can serve as valuable research to anyone. </p>
-<!--        ▪ A 3-6 sentences abstract about the project. It should include the following-->
-<!--        contents-->
-<!--        — Problem statement-->
-<!--        — Your solution-->
-<!--        — Achievement and impact-->
+          database for the collation of project data. Any authorised admin can contribute to this collection of data, they
+          will have an easy to use administrator panel which will assist them in adding information to the database,
+          as well as updating the existing information. Our target audience; entrepreneurs, academics and research
+          institutes, will be able to use our publicly available chatbot service in order to do research on any number
+          of projects which are stored in the database. This will be an ever growing set of information and the
+          capability of our chatbot will only grow as we gain more training data for our integrated Language
+          Understanding Intelligent Service (LUIS). We will be able to provide users with more and more accurate and
+          helpful search results, to any number of users of any scope, regardless of which sector they work in, our
+          chatbot can serve as valuable research to anyone. </p>
+        <!--        ▪ A 3-6 sentences abstract about the project. It should include the following-->
+        <!--        contents-->
+        <!--        — Problem statement-->
+        <!--        — Your solution-->
+        <!--        — Achievement and impact-->
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
@@ -126,51 +126,55 @@
       <div class="col-lg-12 mx-auto">
         <h2 class="text-black mb-4">Key features</h2>
         <p class="text-black-50"> Adaptive cards: We have utilised adaptivecards.io design unique card designs to
-        display data in a user friendly and intuitive way. We have found, through user testing, that the current
-        design choice of our adaptive cards are the easiest and quickest way to gain relevant information on any
-        number of categories. </p>
+          display data in a user friendly and intuitive way. We have found, through user testing, that the current
+          design choice of our adaptive cards are the easiest and quickest way to gain relevant information on any
+          number of categories. </p>
         <p class="text-black-50"> IXN miner: We have created a program which takes in a .docx file as input and extracts
           all of the essential information from it and uploads it to a database hosted on azure. The IXN miner employs
           algorithms which check for duplication of fields and also finds the rows in the column which most match the
           column headings in the database. </p>
         <p class="text-black-50"> Administrator panel: We have firstly created an ixn miner which parsers .docx IXN
-        filse and extracts relevant information and uploads it to the relative databases. In order to make this parser
-        more easily usable by someone who will actually need to use it, we designed an administrator panel using
-        tkinter, this panel allows for step by step guidance for adding new projects to the database and also updating
-        existing information. </p>
+          filse and extracts relevant information and uploads it to the relative databases. In order to make this parser
+          more easily usable by someone who will actually need to use it, we designed an administrator panel using
+          tkinter, this panel allows for step by step guidance for adding new projects to the database and also updating
+          existing information. </p>
         <p class="text-black-50"> Luis machine learning: We have integrated luis with our project in order to parse the
-        users messages and determine the intent of their message as well as the ability to identify keywords in their
-        messages that would aid in construction of SQL queries so that the most relevant results can be displayed with
-        absolute minimised clutter and ease of use. </p>
+          users messages and determine the intent of their message as well as the ability to identify keywords in their
+          messages that would aid in construction of SQL queries so that the most relevant results can be displayed with
+          absolute minimised clutter and ease of use. </p>
         <p class="text-black-50"> Fuzzy string matching: We have utilised the "fuzzywuzzy" python library in order
-        to aid in the parsing of the IXN forms incase fields were mispelt, as mistakes can happen with the best of us,
-        but that doesnt mean that they should be made public on the database, so we do our best to essentially spell
-        check our users. </p>
+          to aid in the parsing of the IXN forms incase fields were mispelt, as mistakes can happen with the best of us,
+          but that doesnt mean that they should be made public on the database, so we do our best to essentially spell
+          check our users. </p>
         <p class="text-black-50"> Microsoft bot Framework: We chose to use the Microsoft Bot Framework to host our
-        chatbot as it was a comprehensive and easy-to-use SDK (Software Development Kit) comprised of the framework
-        itself and also the bot connector SDK. The Microsoft Bot Framework allows for a high degree of customisation,
-        many integration possibilities, developer friendly testing with an emulator. There were also a range of
-        predefined, customisable classes and functions. The downside of using this framework is that it could take
-        a lot of over-complicated code for even the simplest of logic. Having worked with the Microsoft Bot Framework
-        we do not regret our choice as it allowed for a very large amount of customisation. We especially liked the
-        ability to integrate our own adaptive card templates. </p>
-<!--        <p class="text-black-50"> TODO: Anything else? </p>-->
+          chatbot as it was a comprehensive and easy-to-use SDK (Software Development Kit) comprised of the framework
+          itself and also the bot connector SDK. The Microsoft Bot Framework allows for a high degree of customisation,
+          many integration possibilities, developer friendly testing with an emulator. There were also a range of
+          predefined, customisable classes and functions. The downside of using this framework is that it could take
+          a lot of over-complicated code for even the simplest of logic. Having worked with the Microsoft Bot Framework
+          we do not regret our choice as it allowed for a very large amount of customisation. We especially liked the
+          ability to integrate our own adaptive card templates. </p>
+        <!--        <p class="text-black-50"> TODO: Anything else? </p>-->
       </div>
     </div>
   </div>
 </section>
 
-<!--&lt;!&ndash; Video introduction section &ndash;&gt;-->
-<!--<section id="algorithms" class="algorithms-section">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12 mx-auto">-->
-<!--        <h2 class="text-black mb-4">Video introduction</h2>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;<img src="img/ipad.png" class="img-fluid" alt="">&ndash;&gt;-->
-<!--  </div>-->
-<!--</section>-->
+<!-- Video introduction section -->
+<section id="algorithms" class="algorithms-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-black mb-4">Video introduction</h2>
+        <video width="85%" height="85%" controls>
+          <source src="video/demonstration.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
+</section>
 
 <!-- Development team Section -->
 <section id="team" class="team-section">
@@ -179,9 +183,9 @@
       <div class="col-lg-12 mx-auto">
         <h2 class="text-black mb-4">Development team</h2>
         <p class="text-black-50"><b>Adnan Ahmad - adnan.ahmad.18@ucl.ac.uk</b></p>
-        <p class="text-black-50">[Client Liaison, UI Designer, Programmer, Report editor - 50% contribution]</p>
+        <p class="text-black-50">[Client Liaison, UI Designer, Programmer, Report editor - 57% contribution]</p>
         <p class="text-black-50"><b>Rajesh Goyal - rajesh.goyal.18@ucl.ac.uk</b></p>
-        <p class="text-black-50">[Researcher, UI Designer, Programmer, Report editor - 50% contribution]</p>
+        <p class="text-black-50">[Researcher, Programmer, Report editor, Tester - 43% contribution]</p>
         <!--          <p class="text-black-50"><b>Sam Rowsell - sam.rowsell.17@ucl.ac.uk</b></p>-->
         <!--          <p class="text-black-50">[roles & contribution]</p>-->
       </div>
