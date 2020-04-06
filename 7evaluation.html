@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Achievement</title>
+  <title>Evaluation</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,10 +65,7 @@
           <a class="nav-link js-scroll-trigger" href="6testing.html">Testing</A>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#achievementTable">Achievement</A>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="7plan.html">Plan</a>
+          <a class="nav-link js-scroll-trigger" href="#achievementTable">Evaluation</A>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="8appendices.html">Appendices</a>
@@ -82,7 +79,7 @@
 <header class="masthead">
   <div class="container d-flex h-100 align-items-center">
     <div class="mx-auto text-center">
-      <h1 class="mx-auto my-0 text-uppercase">achievement</h1>
+      <h1 class="mx-auto my-0 text-uppercase">evaluation</h1>
       <!--<h2 class="text-white-50 mx-auto mt-2 mb-5">A list of achievement.</h2>-->
     </div>
   </div>
@@ -260,6 +257,36 @@
             <td colspan="3" style="text-align: center;">100%</td>
           </tr>
         </table>
+        <p></p>
+        <p class="text-black-50"> 1 - Project should be searched for based off of 4 different criteria, individuals leading,
+          skills and devices used, keywords, and location. Searching for organisations. Able to return all projects by
+          any given organisation as long as there are any that exist in the database. Able to search for devices used
+          if any project exists that used a given device. Able to search via keywords if any projects contain the given
+          keywords mentioned anywhere (description/title for example). Able to find projects based off of location if
+          it is mentioned in the address. The search function is aided by LUIS which idenifies what the user is searching
+          for and the keywords that need to be passed to the query. The relevant data can be sent to the query which
+          matches the intent most closely and searches for matching projects. </p>
+        <p class="text-black-50"> 2 - A database containing projects which have been submitted using the provided IXN miner,
+        this database contains all the information that we could collect from IXN forms and is hosted on azure. This
+        database is then queried through the chatbot and information can be retrieved and viewed through dialogues or
+        adaptive cards.</p>
+        <p class="text-black-50"> 3 - We were first able to push and updated projects to the database using CLI prompts,
+        following user feedback, we were able to create an administrator panel which allowed for easier pushing and
+        updating of projects. This was created using a tkinter GUI. The panel allows for selection of the IXN form from
+        the users local storage, there are a variety of text boxes and prompts to allow the user to add additional
+        information about the project and is all pushed to one of the four databases.</p>
+        <p class="text-black-50"> 4 - Firstly we display the description and full project title, secondly the contact
+        details, thirdly where the project is located, and fourth the skills, data and devices required for the project.
+        Each time we search for the project, we create an instance of the project to store the information about it.
+        When it is first loaded, it only stores the relevant amount of detail until it is selected. A method is called
+        which then calls a search query and gathers the relevant information needed to display it to the user. It goes on
+        to display said information. An adaptive card is produced to display the relevant information in a friendly way.</p>
+        <p class="text-black-50"> 5 - We were able to integrate LUIS in order to better determine the intent of the
+        messages received by the chatbot. This allows a more dynamic feel to the chatbot which is much more usable as
+        it doesn't rely on needing a detailed script in order to acquire information from the chatbot. We are able to
+        further train our app so that it encompasses an even greater array of messages and more accurately determine
+        what the best intent is for the users message so that they can receive the most accurate and relevant information.</p>
+        <p class="text-black-50"> 6 - </p>
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
