@@ -106,7 +106,7 @@
             <td>The ability to ask a chatbot questions about projects and have it return a list that matches the
               user’s criteria:
               <ul>
-                <li>Organization partner and individuals leading the project</li>
+                <li>Organisation partner and individuals leading the project</li>
                 <li>Skills required, data samples and devices used</li>
                 <li>keywords associated with the project e.g. AI, blockchain, data mining</li>
                 <li>The location of the project</li>
@@ -137,7 +137,7 @@
               <ul>
                 <li>Project title and description</li>
                 <li>Skills required, data samples and devices used</li>
-                <li>Partner organization and contact information</li>
+                <li>Partner organisation and contact information</li>
                 <li>The location of the project</li>
                 <li>The date uploaded</li>
               </ul>
@@ -198,7 +198,7 @@
             <td>11</td>
             <td>Provide a summary on project partners including:
               <ul>
-                <li>Organization Address</li>
+                <li>Organisation Address</li>
                 <li>What they do</li>
                 <li>Contact information to get in touch</li>
               </ul>
@@ -242,7 +242,7 @@
           </tr>
           <tr>
             <td>15</td>
-            <td>Add images to the cards related to the project and organization to prevent a block of text being presented to the user e.g. Company Logos
+            <td>Add images to the cards related to the project and organisation to prevent a block of text being presented to the user e.g. Company Logos
             </td>
             <td>Could</td>
             <td style="text-align: center;">✓</td>
@@ -263,7 +263,7 @@
           any given organisation as long as there are any that exist in the database. Able to search for devices used
           if any project exists that used a given device. Able to search via keywords if any projects contain the given
           keywords mentioned anywhere (description/title for example). Able to find projects based off of location if
-          it is mentioned in the address. The search function is aided by LUIS which idenifies what the user is searching
+          it is mentioned in the address. The search function is aided by LUIS which identifies what the user is searching
           for and the keywords that need to be passed to the query. The relevant data can be sent to the query which
           matches the intent most closely and searches for matching projects. </p>
         <p class="text-black-50"> 2 - A database containing projects which have been submitted using the provided IXN miner,
@@ -286,7 +286,39 @@
         it doesn't rely on needing a detailed script in order to acquire information from the chatbot. We are able to
         further train our app so that it encompasses an even greater array of messages and more accurately determine
         what the best intent is for the users message so that they can receive the most accurate and relevant information.</p>
-        <p class="text-black-50"> 6 - </p>
+        <p class="text-black-50"> 6 - The admin panel provides a means of uploading the forms and parses the forms so that
+        they can be uploaded. However it does reject files which are in the incorrect format. There is an OOP approach
+        for the panel. As IXN forms are tables, we parse the docx file by using the xml behind it, we care able to
+        retrieve a list of the data. We are able to use fuzzy string matching to map the fields of the form to our own
+        schema (using a library called fuzzywuzzy). We also match conflicts using a method which finds the best match and
+        also another method that checks for duplication and selects the best matching field. </p>
+        <p class="text-black-50"> 7 - Local storage is possible by connecting to the database using the supplied
+        credentials and downloading it from within MySQL Workbench, this provides a SQL dumps file which can then be
+        executed in order to host the database anywhere else, even locally if desired.</p>
+        <p class="text-black-50"> 8 - The national database is the main projects database, we have supplied credentials
+        which trusted individuals can use to store project data on, this will then act as the national database for the
+        entire UK. </p>
+        <p class="text-black-50"> 9 - Projects are shown in an adaptive card format. These were designed using
+        adaptivecards.io in a way that could allow for information to be displayed in a concise manner which was 
+        therefore easy to read. </p>
+        <p class="text-black-50"> 10 - Prompted responses on the card so that the user can intuitively click through 
+        as well as send messages. The adaptive cards can each be clicked to navigate the sections, alternatively messages
+        can also be sent to navigate. </p>
+        <p class="text-black-50"> 11 - provide a summary on project partners including address and contact information
+        which are all displayed on an adaptive card</p>
+        <p class="text-black-50"> 12 - store information on contract and NDA information and its progress. We store
+        information on the contract in a timeline including when it was completed and the signatories involved. This
+        is similar for the NDA. If a project hasnt been finalised it will be displayed at the bottom. </p>
+        <p class="text-black-50"> 13 - Visualisation of the progress of contracts and NDA as they are completed. This
+        is done in a timeline format. </p>
+        <p class="text-black-50"> 14 - Projects from academic institutions can be inserted with additional data. If this
+        information is available, it can be selected and displayed within an adaptive card. The card functionality is
+        enabled by storing cards in a "Cards" template. A getter method gets these cards and overwrites the information
+        held in the card template with the information found from the databases. Projects which are missing pieces
+        of information are not displayed, the option is not given to view data which does not exist. </p>
+        <p class="text-black-50"> 15 - Images are added to the adaptive cards which are selected based off of which 
+        image would best represent the information being displayed. This includes the logo for the organisation which
+        helps the user easily identify the organisation for which the data is being displayed.</p>
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
@@ -328,13 +360,6 @@
             <td style="text-align: center;">50</td>
             <!--              <td></td>-->
           </tr>
-<!--          <tr>-->
-<!--            <td>UI design-->
-<!--            </td>-->
-<!--            <td></td>-->
-<!--            <td></td>-->
-<!--            &lt;!&ndash;              <td></td>&ndash;&gt;-->
-<!--          </tr>-->
           <tr>
             <td>Coding</td>
             <td style="text-align: center;">90</td>
@@ -350,8 +375,8 @@
           </tr>
           <tr>
             <td>Bi-weekly reports</td>
-            <td style="text-align: center;">100</td>
-            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">90</td>
+            <td style="text-align: center;">10</td>
             <!--              <td></td>-->
           </tr>
           <tr>
@@ -379,28 +404,28 @@
             <td style="text-align: center;">60</td>
             <!--              <td></td>-->
           </tr>
-<!--          <tr>-->
+          <tr>
+            <td>Azure deployment</td>
+            <td style="text-align: center;">20</td>
+            <td style="text-align: center;">80</td>
 <!--            <td></td>-->
-<!--            <td></td>-->
-<!--            <td></td>-->
-<!--            &lt;!&ndash;              <td></td>&ndash;&gt;-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td></td>-->
-<!--            <td></td>-->
-<!--            <td></td>-->
-<!--            &lt;!&ndash;              <td></td>&ndash;&gt;-->
-<!--          </tr>-->
+          </tr>
+          <tr>
+            <td>Administration panel</td>
+            <td style="text-align: center;">100</td>
+            <td style="text-align: center;">0</td>
+            <!--              <td></td>-->
+          </tr>
           <tr>
             <td>Overall contribution</td>
-            <td style="text-align: center;">58</td>
-            <td style="text-align: center;">42</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">43</td>
             <!--              <td></td>-->
           </tr>
           <tr>
             <td>Main roles</td>
             <td>Client Liaison, UI Designer, Programmer, Report editor</td>
-            <td>Researcher, UI Designer, Programmer, Report editor</td>
+            <td>Researcher, Programmer, Report editor, Tester</td>
             <!--              <td></td>-->
           </tr>
         </table>
@@ -408,6 +433,108 @@
       </div>
     </div>
     <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
+  </div>
+</section>
+
+<!-- Known bugs section -->
+<section id="knownBugs" class="knownBugs-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <p></p>
+        <h2 class="text-black mb-4">Known bugs</h2>
+        <p class="text-black-50"></p>
+        <table style="width:100%">
+          <tr>
+            <th>ID</th>
+            <th style="text-align: center;">Bug description</th>
+            <th style="text-align: center;">Priority</th>
+            <!--              <th>Sam</th>-->
+          </tr>
+          <tr>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">We do not have proper input sanitisation with our IXN miner and hence it
+            is vulnerable to SQL injection and can use issues when users use quotes within their normal data entry</td>
+            <td style="text-align: center;">High</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">The welcome card cannot be displayed for our chatbot, even though this works
+            perfectly when running the chatbot locally, for some reason it does not work on deployment to a web app.</td>
+            <td style="text-align: center;">Medium</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Critical evaluation pf project strategy section -->
+<section id="criticalEvaluation" class="criticalEvaluation-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <p></p>
+        <h2 class="text-black mb-4">Critical evaluation of the project</h2>
+        <p>User interface / user experience</p>
+        <p class="text-black-50">The feedback that we have received shows that the user experience is pleasant and is nearly ideal for our
+        target group. Our UI is intuitive and easy to understand, we have been able to successfully provide an
+        interface for enquires to be made to projects and relevant information be shown. Prior to our user acceptance
+        testing the experience wasnt as easy for using the chatbot interface as there was no guidance on the kinds
+        of messages that the chatbot could respond to, however on development we were able to add a help section
+        which opened the gates to a more full utilisation of our chatbot. The user experience in the end was overall
+        a pleasant one.</p>
+        <p>Functionality</p>
+        <p class="text-black-50">All core functionality has been completed to a high standard. The chatbot and parser are fully functional as
+        per requirements.</p>
+        <p>Stability</p>
+        <p class="text-black-50">Our chatbot can be considered to have good stability as there is a consistent output
+        for a given input. The AI behind the chatbot can evolve however so it could be considered to be unstable as
+        some inputs could produce different outputs as the model is trained further. Such instability will not be
+        considered negatively, but a positive outcome for the future of the project. </p>
+        <p>Efficiency</p>
+        <p class="text-black-50">Our chatbot can be considered to be extremely efficient as a single message can
+        provide the user with plentiful options and information relevant to their query. Further information is
+        also easy to access and very quick to do, which aids the efficiency of our chatbot. Our IXN miner is efficient
+        as insertion of projects is quick and comprehensive, as well as updating of projects, as our GUI allows for
+        quick and simple data entry with near instant response.</p>
+        <p>Compatibility</p>
+        <p class="text-black-50">Our project is compatible with all operating systems, our chatbot is ran on browser
+        and has been tested on various browsers and hardwares and works across all platforms with no performance deficit.
+        No alteration is required for our project to be ran on any operating system / hardware.</p>
+        <p>Maintainability</p>
+        <p class="text-black-50">Our code is commented and documented which adds to its maintainability. Our code is also
+        very modular and so is extendable if requirements change over time.</p>
+        <p>Project management</p>
+        <p class="text-black-50">Adnan has been the team leader of our project and has provided excelent management for
+        the work which we have completed. He has communicated efficiently with clients and gathered requirements in a
+        timely manner. Rajesh and Adnan kept eachother updated continuously for updates within the project, with the
+        additional use of trello to keep track of milestones. Overall the project management was excellent as we have
+        completed all requirements. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Future work section -->
+<section id="futureWork" class="futureWork-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <p></p>
+        <h2 class="text-black mb-4">Future work</h2>
+        <p class="text-black-50">If we had more time for the project we hope to be able to fix the existing bugs, in
+        particular the welcome card so that other organisations might be able to swap out the image within the welcome
+        card to replace with their own for their own locally hosted chatbots.</p>
+        <p class="text-black-50">We also hope to further train our AI so that it can recognise a wider array of messages
+        which will come with time when our chatbot is used by practitioners and others in our target audience.</p>
+        <p class="text-black-50">Further development can be guided by changes in requirements over time as well as further
+        user feedback as our user base grows over time</p>
+        <p class="text-black-50">In the future we would hope to integrate Google Maps API with our chatbot in order to
+        be able to geographically locate where projects are taking place, unfortunately we were not able to complete
+        this as we had reduced capability as one of our members of our team was no longer able to take part in the project.</p>
+      </div>
+    </div>
   </div>
 </section>
 
